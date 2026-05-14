@@ -22,3 +22,10 @@ pip install -r requirements.txt
 
 The project dataset consists of paper abstracts and metadata pulled from [OpenAlex](https://openalex.org/).
 You can get a free API key [here](https://openalex.org/settings/api).
+
+Your API key should go in a top-level `.env` file like so:
+
+```bash
+# .env
+export API_KEY="your_api_key_here" 
+```
