@@ -18,7 +18,7 @@ pip install -U pip
 pip install -r requirements.txt
 ```
 
-### API key
+### Secrets
 
 The project dataset consists of paper abstracts and metadata pulled from [OpenAlex](https://openalex.org/).
 You can get a free API key [here](https://openalex.org/settings/api).
@@ -28,4 +28,12 @@ Your API key should go in a top-level `.env` file like so:
 ```bash
 # .env
 export API_KEY="your_api_key_here" 
+```
+
+Summarization and relevancy scoring are performed by an LLM, specifically [Meta Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct).
+This requires access to the repository with a Hugging Face access token, so request access and a token if you do not have one already and save it in `.env`:
+
+```bash
+# .env
+export HF_TOKEN="your_token_here"
 ```
