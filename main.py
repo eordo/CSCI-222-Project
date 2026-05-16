@@ -1,0 +1,151 @@
+# Imports can take a while, especially on the cluster.
+print("Setting up environment - please wait...")
+
+import json
+import os
+import re
+import sys
+import time
+import warnings
+from pathlib import Path
+
+import bm25s
+import faiss
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import requests
+import seaborn as sns
+import torch
+import umap
+from dotenv import load_dotenv
+from huggingface_hub import login
+from sentence_transformers import CrossEncoder, SentenceTransformer
+from tabulate import tabulate
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
+from src.llm import init_generator, score, summarize
+from src.rankings import (get_bm25_ranking, get_faiss_ranking,
+                          get_rrf_ranking, rerank)
+
+
+# ============================================================================
+# ENVIRONMENT SETUP
+# ============================================================================
+# Mount Google Drive if running in Colab.
+# Edit this Path to be the notebook's location relative to MyDrive.
+GDRIVE_PATH = Path('HES/CSCI_222/Project')
+if 'google.colab' in sys.modules:
+    from google.colab import drive
+    drive.mount('/content/drive', force_remount=True)
+    PROJECT_ROOT = Path('/content/drive/MyDrive') / GDRIVE_PATH
+else:
+    PROJECT_ROOT = Path('.')
+
+os.chdir(PROJECT_ROOT)
+DATA_DIR = PROJECT_ROOT / 'data'
+DATA_DIR.mkdir(exist_ok=True)
+
+# Use a GPU if available.
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+USING_GPU = DEVICE.type == 'cuda'
+print(f'Device: {DEVICE}')
+if USING_GPU:
+    print(f"  GPU:  {torch.cuda.get_device_name(0)}")
+    print(f"  VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
+
+# Load the project .env.
+assert load_dotenv(PROJECT_ROOT / '.env'), "Failed to load .env, check path."
+
+# Load the OpenAlex API key.
+BASE_URL = "https://api.openalex.org/works"
+API_KEY = os.getenv('API_KEY')
+if not API_KEY:
+    raise RuntimeError('OpenAlex API key not found in .env.')
+
+# Load the Hugging Face token.
+HF_TOKEN = os.getenv('HF_TOKEN')
+if not HF_TOKEN:
+    raise RuntimeError('Hugging Face token not found in .env.')
+login(token=HF_TOKEN)
+
+# ============================================================================
+# DATA LOADING
+# ============================================================================
+papers_50k_json = DATA_DIR / 'papers_50k.json'
+if papers_50k_json.exists():
+    with open(papers_50k_json, 'r') as f:
+        papers_corpus = json.load(f)
+        print(f"Loaded {len(papers_corpus):,} papers from {papers_50k_json}.")
+else:
+    def reconstruct_abstract(inverted_index):
+        positions = [
+            (pos, word)
+            for word, positions in inverted_index.items()
+            for pos in positions
+        ]
+        return ' '.join(word for _, word in sorted(positions))
+
+    filter_fields = [
+        'primary_topic.field.id:20',
+        'type:article',
+        'has_abstract:true',
+        'is_paratext:false', # Non-publication material.
+        'is_retracted:false',
+        'language:en'
+    ]
+    select_fields = [
+        'id',
+        'title',
+        'authorships',
+        'publication_year',
+        'primary_location',
+        'abstract_inverted_index',
+        'primary_topic',
+        'doi'
+    ]
+    params = {
+        'filter': ','.join(filter_fields),
+        'select': ','.join(select_fields),
+        'per_page': 200,
+        'cursor': '*',
+        'api_key': API_KEY
+    }
+
+    PAPERS_LIMIT = 50_000
+    papers_corpus = []
+    while len(papers_corpus) < PAPERS_LIMIT:
+        resp = requests.get(BASE_URL, params=params)
+        resp.raise_for_status()
+        data = resp.json()
+        for work in data['results']:
+            abstract = reconstruct_abstract(work['abstract_inverted_index'])
+            # Skip missing abstracts and missing titles.
+            if not abstract or not work.get('title'):
+                continue
+            authors = [a['author']['display_name'] for a in work.get('authorships', [])]
+            source = work.get('primary_location', {}).get('source', {})
+            journal = source.get('display_name') if source is not None else None
+            papers_corpus.append({
+                'id': work['id'],
+                'title': work.get('title'),
+                'year': work.get('publication_year'),
+                'authors': authors,
+                'abstract': abstract,
+                'journal': journal,
+                'topic': work.get('primary_topic', {}).get('display_name'),
+                'doi': work.get('doi')
+            })
+            if len(papers_corpus) == PAPERS_LIMIT:
+                break
+
+        print(f"Collected {len(papers_corpus)} papers...", end='\r', flush=True)
+        next_cursor = data['meta'].get('next_cursor')
+        if not next_cursor:
+            break
+        params['cursor'] = next_cursor
+        time.sleep(0.5) # Polite backoff.
+
+    with open(papers_50k_json, 'w') as f:
+        json.dump(papers_corpus, f)
+        print(f"Saved {PAPERS_LIMIT:,} papers to {papers_50k_json}.")
