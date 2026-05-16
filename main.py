@@ -75,8 +75,8 @@ login(token=HF_TOKEN)
 papers_50k_json = DATA_DIR / 'papers_50k.json'
 if papers_50k_json.exists():
     with open(papers_50k_json, 'r') as f:
-        papers_corpus = json.load(f)
-        print(f"Loaded {len(papers_corpus):,} papers from {papers_50k_json}.")
+        papers = json.load(f)
+        print(f"Loaded {len(papers):,} papers from {papers_50k_json}.")
 else:
     def reconstruct_abstract(inverted_index):
         positions = [
@@ -113,8 +113,8 @@ else:
     }
 
     PAPERS_LIMIT = 50_000
-    papers_corpus = []
-    while len(papers_corpus) < PAPERS_LIMIT:
+    papers = []
+    while len(papers) < PAPERS_LIMIT:
         resp = requests.get(BASE_URL, params=params)
         resp.raise_for_status()
         data = resp.json()
@@ -126,7 +126,7 @@ else:
             authors = [a['author']['display_name'] for a in work.get('authorships', [])]
             source = work.get('primary_location', {}).get('source', {})
             journal = source.get('display_name') if source is not None else None
-            papers_corpus.append({
+            papers.append({
                 'id': work['id'],
                 'title': work.get('title'),
                 'year': work.get('publication_year'),
@@ -136,10 +136,10 @@ else:
                 'topic': work.get('primary_topic', {}).get('display_name'),
                 'doi': work.get('doi')
             })
-            if len(papers_corpus) == PAPERS_LIMIT:
+            if len(papers) == PAPERS_LIMIT:
                 break
 
-        print(f"Collected {len(papers_corpus)} papers...", end='\r', flush=True)
+        print(f"Collected {len(papers)} papers...", end='\r', flush=True)
         next_cursor = data['meta'].get('next_cursor')
         if not next_cursor:
             break
@@ -147,5 +147,28 @@ else:
         time.sleep(0.5) # Polite backoff.
 
     with open(papers_50k_json, 'w') as f:
-        json.dump(papers_corpus, f)
+        json.dump(papers, f)
         print(f"Saved {PAPERS_LIMIT:,} papers to {papers_50k_json}.")
+
+# ============================================================================
+# DENSE EMBEDDINGS
+# ============================================================================
+model_name = 'allenai/specter2_base'
+model = SentenceTransformer(model_name, device=DEVICE)
+
+specter_embeddings_50k_npy = DATA_DIR / 'specter_embeddings_50k.npy'
+if specter_embeddings_50k_npy.exists():
+    embeddings = np.load(specter_embeddings_10k_npy)
+    print(f"Loaded SPECTER embeddings from {specter_embeddings_50k_npy}.")
+else:
+    texts = [p['title'] + " [SEP] " + p['abstract'] for p in papers]
+    embeddings = model.encode(
+        texts,
+        batch_size=64,
+        show_progress_bar=True,
+        convert_to_numpy=True,
+        normalize_embeddings=True
+    )
+    embeddings = embeddings.astype('float32')
+    np.save(specter_embeddings_50k_npy, embeddings)
+    print(f"Saved SPECTER embeddings to {specter_embeddings_50k_npy}.")
