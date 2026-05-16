@@ -17,14 +17,12 @@ import pandas as pd
 import requests
 import seaborn as sns
 import torch
-import umap
 from dotenv import load_dotenv
 from huggingface_hub import login
 from sentence_transformers import CrossEncoder, SentenceTransformer
-from tabulate import tabulate
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
-from src.llm import init_generator, score, summarize
+from src.generation import init_generator, score, summarize
 from src.rankings import (get_bm25_ranking, get_faiss_ranking,
                           get_rrf_ranking, rerank)
 
@@ -202,3 +200,31 @@ else:
     retriever.index(corpus_tokens)
     retriever.save(bm25s_index_dir)
     print(f"Saved retriever index to {bm25s_index_dir}.")
+
+# ============================================================================
+# MODELS
+# ============================================================================
+# Load MS Marco Cross-Encoder.
+# This is for reranking.
+ce_name = 'cross-encoder/ms-marco-MiniLM-L-6-v2'
+cross_encoder = CrossEncoder(ce_name, device=DEVICE)
+
+# Load Llama 3.1.
+# This is for abstract summarization and scoring.
+llm_name = 'meta-llama/Llama-3.1-8B-Instruct'
+llm = AutoModelForCausalLM.from_pretrained(
+    llm_name,
+    torch_dtype='auto',
+    device_map='auto'
+)
+tokenizer = AutoTokenizer.from_pretrained(
+    llm_name,
+    clean_up_tokenization_spaces=False
+)
+generator = pipeline(
+    'text-generation',
+    model=llm,
+    tokenizer=tokenizer,
+)
+# Initialize the module-level generator.
+init_generator(generator)
