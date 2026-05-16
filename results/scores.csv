@@ -1,0 +1,121 @@
+query,category,method,mean_score
+Causes of inflation in developing economies,broad_exploratory,faiss,0.7
+Causes of inflation in developing economies,broad_exploratory,bm25,1.0
+Causes of inflation in developing economies,broad_exploratory,rrf,1.2
+Causes of inflation in developing economies,broad_exploratory,reranked,1.3
+Effects of automation on labor market outcomes,broad_exploratory,faiss,1.8
+Effects of automation on labor market outcomes,broad_exploratory,bm25,2.9
+Effects of automation on labor market outcomes,broad_exploratory,rrf,2.2
+Effects of automation on labor market outcomes,broad_exploratory,reranked,2.4
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,1.1
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,1.5
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,1.1
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,1.4
+Impact of income inequality on economic mobility,broad_exploratory,faiss,1.2
+Impact of income inequality on economic mobility,broad_exploratory,bm25,1.5
+Impact of income inequality on economic mobility,broad_exploratory,rrf,1.2
+Impact of income inequality on economic mobility,broad_exploratory,reranked,1.5
+Trade liberalization and firm productivity,broad_exploratory,faiss,2.0
+Trade liberalization and firm productivity,broad_exploratory,bm25,2.5
+Trade liberalization and firm productivity,broad_exploratory,rrf,2.3
+Trade liberalization and firm productivity,broad_exploratory,reranked,2.8
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,1.1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,1.2
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,1.1
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,1.4
+Financial crises and household consumption behavior,broad_exploratory,faiss,1.2
+Financial crises and household consumption behavior,broad_exploratory,bm25,1.4
+Financial crises and household consumption behavior,broad_exploratory,rrf,1.7
+Financial crises and household consumption behavior,broad_exploratory,reranked,1.8
+Role of education in long-run wage growth,broad_exploratory,faiss,0.9
+Role of education in long-run wage growth,broad_exploratory,bm25,0.9
+Role of education in long-run wage growth,broad_exploratory,rrf,0.9
+Role of education in long-run wage growth,broad_exploratory,reranked,1.2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,1.4
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,1.3
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,1.6
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,1.8
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,0.7
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,1.0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,1.1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,1.2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,2.1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,1.8
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,1.9
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,1.9
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,1.2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,1.2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,1.2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,1.1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,1.1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,1.1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,1.2
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,1.3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,1.5
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,1.6
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,1.7
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,1.7
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,1.1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,1.2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,1.3
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,1.3
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,1.1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,1.3
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,1.5
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,1.4
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,0.8
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,0.9
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,0.8
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,1.0
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,0.8
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,1.0
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,0.9
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,1.0
+What have economists found about universal basic income and labor supply?,natural_language,faiss,0.6
+What have economists found about universal basic income and labor supply?,natural_language,bm25,0.4
+What have economists found about universal basic income and labor supply?,natural_language,rrf,0.8
+What have economists found about universal basic income and labor supply?,natural_language,reranked,1.0
+"Does free trade help workers, or mostly firms?",natural_language,faiss,1.2
+"Does free trade help workers, or mostly firms?",natural_language,bm25,1.2
+"Does free trade help workers, or mostly firms?",natural_language,rrf,1.4
+"Does free trade help workers, or mostly firms?",natural_language,reranked,1.3
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,1.3
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,1.5
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,1.3
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,1.7
+What does research say about whether student debt affects home ownership?,natural_language,faiss,0.8
+What does research say about whether student debt affects home ownership?,natural_language,bm25,0.8
+What does research say about whether student debt affects home ownership?,natural_language,rrf,0.9
+What does research say about whether student debt affects home ownership?,natural_language,reranked,1.1
+How much do recessions affect people early in their careers?,natural_language,faiss,1.4
+How much do recessions affect people early in their careers?,natural_language,bm25,0.8
+How much do recessions affect people early in their careers?,natural_language,rrf,1.1
+How much do recessions affect people early in their careers?,natural_language,reranked,1.7
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,0.2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,1.3
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,0.9
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,1.5
+education returns instrumental variables developing countries,keyword_researcher,faiss,1.0
+education returns instrumental variables developing countries,keyword_researcher,bm25,1.4
+education returns instrumental variables developing countries,keyword_researcher,rrf,1.0
+education returns instrumental variables developing countries,keyword_researcher,reranked,1.6
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,1.8
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,1.9
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,2.0
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,2.1
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,1.1
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,1.9
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,1.8
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,1.9
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,1.0
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,1.6
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,1.1
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,1.6
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,1.4
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,1.4
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,1.3
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,1.0
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,1.2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,1.6
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,1.2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,1.5

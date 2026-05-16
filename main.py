@@ -20,9 +20,10 @@ import torch
 from dotenv import load_dotenv
 from huggingface_hub import login
 from sentence_transformers import CrossEncoder, SentenceTransformer
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from transformers import (AutoModelForCausalLM, AutoTokenizer,
+                          BitsAndBytesConfig, pipeline)
 
-from src.generation import init_generator, score, summarize
+from src.evaluation import init_generator, score, summarize
 from src.rankings import (get_bm25_ranking, get_faiss_ranking,
                           get_rrf_ranking, rerank)
 
@@ -43,6 +44,8 @@ else:
 os.chdir(PROJECT_ROOT)
 DATA_DIR = PROJECT_ROOT / 'data'
 DATA_DIR.mkdir(exist_ok=True)
+RESULTS_DIR = PROJECT_ROOT / 'results'
+RESULTS_DIR.mkdir(exist_ok=True)
 
 # Use a GPU if available.
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -211,9 +214,11 @@ cross_encoder = CrossEncoder(ce_name, device=DEVICE)
 
 # Load Llama 3.1.
 # This is for abstract summarization and scoring.
+bnb_config = BitsAndBytesConfig(load_in_4bit=True)
 llm_name = 'meta-llama/Llama-3.1-8B-Instruct'
 llm = AutoModelForCausalLM.from_pretrained(
     llm_name,
+    quantization_config=bnb_config,
     torch_dtype='auto',
     device_map='auto'
 )
@@ -228,3 +233,78 @@ generator = pipeline(
 )
 # Initialize the module-level generator.
 init_generator(generator)
+
+# ============================================================================
+# EVALUATION
+# ============================================================================
+scores10_csv = RESULTS_DIR / 'scores_10.csv'
+scores5_csv = RESULTS_DIR / 'scores_5.csv'
+if scores10_csv.exists() and scores5_csv.exists():
+    print(f"Found relevance scores @10: {scores10_csv}.")
+    print(f"Found relevance scores @5:  {scores5_csv}.")
+    print("Nothing to do here - continuing.")
+else:
+    # Load the test queries.
+    df = pd.read_csv('queries.csv')
+
+    k = 50      # Depth for FAISS/BM25 search.
+    top_k = 10  # Return top 10 papers.
+    records10 = []
+    records5  = []
+    print(f"Retrieving and scoring abstracts for {len(df)} queries.")
+    for i, (query, category) in enumerate(df.itertuples(index=False, name=None)):
+        print(f"[{i+1}] {query}")
+        # FAISS.
+        faiss_ranking = get_faiss_ranking(query, model, index, k=k)
+        faiss_top_k   = [(idx, papers[idx]) for idx in faiss_ranking[:top_k]]
+        # BM25.
+        bm25_ranking = get_bm25_ranking(query, retriever, k=k)
+        bm25_top_k   = [(idx, papers[idx]) for idx in bm25_ranking[:top_k]]
+        # RRF.
+        rrf_ranking = get_rrf_ranking(faiss_ranking, bm25_ranking)
+        rrf_top_k   = [(idx, papers[idx]) for idx in rrf_ranking[:top_k]]
+        # Reranked.
+        reranking = rerank(
+            cross_encoder,
+            query,
+            [(i, papers[i]) for i in rrf_ranking]
+        )
+        reranked_top_k = [(idx, papers[idx]) for idx in reranking[:top_k]]
+
+        # Score the relevance of each retrieved abstract.
+        all_papers = faiss_top_k + bm25_top_k + rrf_top_k + reranked_top_k
+        all_scores = score(query, all_papers, batch_size=4)
+        scores = {
+            'faiss':    all_scores[0:top_k],
+            'bm25':     all_scores[top_k:2*top_k],
+            'rrf':      all_scores[2*top_k:3*top_k],
+            'reranked': all_scores[3*top_k:4*top_k]
+        }
+        for method, method_scores in scores.items():
+            records10.append({
+                'query': query,
+                'category': category,
+                'method': method,
+                'mean_score': np.mean([
+                    r['score'] for r in method_scores
+                    if r['score'] is not None
+                ])
+            })
+            records5.append({
+                'query': query,
+                'category': category,
+                'method': method,
+                'mean_score': np.mean([
+                    r['score'] for r in method_scores[:5]
+                    if r['score'] is not None
+                ])
+            })
+        
+        torch.cuda.empty_cache()
+
+    results10_df = pd.DataFrame(records10)
+    results10_df.to_csv(scores10_csv, index=False)
+    results5_df = pd.DataFrame(records5)
+    results5_df.to_csv(scores5_csv, index=False)
+    print(f"Saved relevance scores @10 to {scores10_csv}.")
+    print(f"Saved relevance scores @5 to {scores5_csv}.")

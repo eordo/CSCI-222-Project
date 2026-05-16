@@ -1,0 +1,31 @@
+query,category
+Causes of inflation in developing economies,broad_exploratory
+Effects of automation on labor market outcomes,broad_exploratory
+Determinants of economic growth in low-income countries,broad_exploratory
+Impact of income inequality on economic mobility,broad_exploratory
+Trade liberalization and firm productivity,broad_exploratory
+Economic effects of climate change adaptation policies,broad_exploratory
+Financial crises and household consumption behavior,broad_exploratory
+Role of education in long-run wage growth,broad_exploratory
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical
+Instrumental variable estimates of returns to education in Latin America,narrow_technical
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical
+Structural estimation of household consumption under liquidity constraints,narrow_technical
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical
+What does the economics literature say about whether immigration lowers native wages?,natural_language
+Do higher interest rates actually reduce inflation in practice?,natural_language
+What have economists found about universal basic income and labor supply?,natural_language
+"Does free trade help workers, or mostly firms?",natural_language
+Do rent control policies actually make housing more affordable over time?,natural_language
+What does research say about whether student debt affects home ownership?,natural_language
+How much do recessions affect people early in their careers?,natural_language
+minimum wage employment youth diff-in-diff united states,keyword_researcher
+education returns instrumental variables developing countries,keyword_researcher
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher
+monetary policy event study stock volatility high frequency,keyword_researcher
+carbon tax synthetic control european union emissions,keyword_researcher
+microfinance randomized trial household welfare south asia,keyword_researcher
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher
