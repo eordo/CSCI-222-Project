@@ -293,3 +293,62 @@ else:
     records_df = pd.DataFrame(records)
     records_df.to_csv(scores_csv, index=False)
     print(f"Saved relevance scores @{top_k} to {scores_csv}.")
+
+# ============================================================================
+# UMAP VISUALIZATION
+# ============================================================================
+umap_png = RESULTS_DIR / 'umap.png'
+if umap_png.exists():
+    print(f"UMAP visualization already exists at {umap_png}.")
+else:
+    reducer = umap.UMAP(
+        n_components=2,
+        metric='cosine',
+        n_jobs=1,
+        random_state=222
+    )
+    coords = reducer.fit_transform(embeddings)
+    labels = [
+        p['topic'] if p['topic'] is not None else 'Unknown'
+        for p in papers
+    ]
+
+    df_umap = pd.DataFrame({
+        'x': coords[:,0],
+        'y': coords[:,1],
+        'topic': labels
+    })
+    # These ranges to filter out outliers are specific to this seed.
+    df_umap = df_umap[
+        (df_umap['x'] >= 2.5) & 
+        (df_umap['x'] <= 17.5) & 
+        (df_umap['y'] >= -5)]
+
+    topics = pd.Series([p['topic'] for p in papers])
+    top10_topics = topics.value_counts(ascending=False)[:10].index
+
+    # Plot the UMAP projection limited to papers in the top 10 topics.
+    fig, ax = plt.subplots(figsize=(12.8, 4.8))
+    sns.scatterplot(
+        data=df_umap[df_umap['topic'].isin(top10_topics)],
+        # data=df_umap[df_umap['topic'].isin(top10_topics)],
+        x='x',
+        y='y',
+        hue='topic',
+        s=3,
+        alpha=0.67,
+        ax=ax
+    )
+    ax.set_xlabel('UMAP 1')
+    ax.set_ylabel('UMAP 2')
+    ax.set_title('UMAP projection of the dense embeddings')
+    ax.legend(
+        title='Topic',
+        bbox_to_anchor=(1.02, 1),
+        loc='upper left',
+        borderaxespad=0,
+        markerscale=6
+    )
+    fig.tight_layout()
+    fig.savefig(RESULTS_DIR / 'umap.png', dpi=150)
+    print(f"Saved UMAP visualization to {umap_png}.")
