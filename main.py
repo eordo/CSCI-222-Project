@@ -158,7 +158,7 @@ model = SentenceTransformer(model_name, device=DEVICE)
 
 specter_embeddings_50k_npy = DATA_DIR / 'specter_embeddings_50k.npy'
 if specter_embeddings_50k_npy.exists():
-    embeddings = np.load(specter_embeddings_10k_npy)
+    embeddings = np.load(specter_embeddings_50k_npy)
     print(f"Loaded SPECTER embeddings from {specter_embeddings_50k_npy}.")
 else:
     texts = [p['title'] + " [SEP] " + p['abstract'] for p in papers]
@@ -172,3 +172,33 @@ else:
     embeddings = embeddings.astype('float32')
     np.save(specter_embeddings_50k_npy, embeddings)
     print(f"Saved SPECTER embeddings to {specter_embeddings_50k_npy}.")
+
+# ============================================================================
+# INDEXES
+# ============================================================================
+# FAISS index.
+faiss_index_file = DATA_DIR / 'specter_index_50k.faiss'
+if faiss_index_file.exists():
+    index = faiss.read_index(str(faiss_index_file))
+    print(f"Loaded FAISS index from {faiss_index_file}.")
+else:
+    index = faiss.IndexFlatIP(embeddings.shape[1])
+    index.add(embeddings)
+    faiss.write_index(
+        index,
+        str(DATA_DIR / 'specter_index_50k.faiss')
+    )
+    print(f"Saved FAISS index to {faiss_index_file}.")
+
+# BM25 index.
+bm25s_index_dir = DATA_DIR / 'bm25s_50k'
+if bm25s_index_dir.exists():
+    retriever = bm25s.BM25.load(bm25s_index_dir)
+    print(f"Loaded retriever index from {bm25s_index_dir}.")
+else:
+    corpus = [p['title'] + " " + p['abstract'] for p in papers]
+    corpus_tokens = bm25s.tokenize(corpus)
+    retriever = bm25s.BM25()
+    retriever.index(corpus_tokens)
+    retriever.save(bm25s_index_dir)
+    print(f"Saved retriever index to {bm25s_index_dir}.")
