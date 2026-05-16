@@ -17,6 +17,7 @@ import pandas as pd
 import requests
 import seaborn as sns
 import torch
+import umap
 from dotenv import load_dotenv
 from huggingface_hub import login
 from sentence_transformers import CrossEncoder, SentenceTransformer
@@ -237,20 +238,17 @@ init_generator(generator)
 # ============================================================================
 # EVALUATION
 # ============================================================================
-scores10_csv = RESULTS_DIR / 'scores_10.csv'
-scores5_csv = RESULTS_DIR / 'scores_5.csv'
-if scores10_csv.exists() and scores5_csv.exists():
-    print(f"Found relevance scores @10: {scores10_csv}.")
-    print(f"Found relevance scores @5:  {scores5_csv}.")
-    print("Nothing to do here - continuing.")
+scores_csv = RESULTS_DIR / 'scores.csv'
+if scores_csv.exists():
+    records_df = pd.read_csv(scores_csv)
+    print(f"Loaded relevance scores from {scores_csv}.")
 else:
     # Load the test queries.
     df = pd.read_csv('queries.csv')
 
     k = 50      # Depth for FAISS/BM25 search.
     top_k = 10  # Return top 10 papers.
-    records10 = []
-    records5  = []
+    records = []
     print(f"Retrieving and scoring abstracts for {len(df)} queries.")
     for i, (query, category) in enumerate(df.itertuples(index=False, name=None)):
         print(f"[{i+1}] {query}")
@@ -281,30 +279,17 @@ else:
             'reranked': all_scores[3*top_k:4*top_k]
         }
         for method, method_scores in scores.items():
-            records10.append({
-                'query': query,
-                'category': category,
-                'method': method,
-                'mean_score': np.mean([
-                    r['score'] for r in method_scores
-                    if r['score'] is not None
-                ])
-            })
-            records5.append({
-                'query': query,
-                'category': category,
-                'method': method,
-                'mean_score': np.mean([
-                    r['score'] for r in method_scores[:5]
-                    if r['score'] is not None
-                ])
-            })
-        
+            for rank, r in enumerate(method_scores, start=1):
+                records.append({
+                    'query': query,
+                    'category': category,
+                    'method': method,
+                    'rank': rank,
+                    'score': r['score'] if r['score'] is not None else None
+                })
+
         torch.cuda.empty_cache()
 
-    results10_df = pd.DataFrame(records10)
-    results10_df.to_csv(scores10_csv, index=False)
-    results5_df = pd.DataFrame(records5)
-    results5_df.to_csv(scores5_csv, index=False)
-    print(f"Saved relevance scores @10 to {scores10_csv}.")
-    print(f"Saved relevance scores @5 to {scores5_csv}.")
+    records_df = pd.DataFrame(records)
+    records_df.to_csv(scores_csv, index=False)
+    print(f"Saved relevance scores @{top_k} to {scores_csv}.")

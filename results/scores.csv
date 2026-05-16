@@ -1,121 +1,1201 @@
-query,category,method,mean_score
-Causes of inflation in developing economies,broad_exploratory,faiss,0.7
-Causes of inflation in developing economies,broad_exploratory,bm25,1.0
-Causes of inflation in developing economies,broad_exploratory,rrf,1.2
-Causes of inflation in developing economies,broad_exploratory,reranked,1.3
-Effects of automation on labor market outcomes,broad_exploratory,faiss,1.8
-Effects of automation on labor market outcomes,broad_exploratory,bm25,2.9
-Effects of automation on labor market outcomes,broad_exploratory,rrf,2.2
-Effects of automation on labor market outcomes,broad_exploratory,reranked,2.4
-Determinants of economic growth in low-income countries,broad_exploratory,faiss,1.1
-Determinants of economic growth in low-income countries,broad_exploratory,bm25,1.5
-Determinants of economic growth in low-income countries,broad_exploratory,rrf,1.1
-Determinants of economic growth in low-income countries,broad_exploratory,reranked,1.4
-Impact of income inequality on economic mobility,broad_exploratory,faiss,1.2
-Impact of income inequality on economic mobility,broad_exploratory,bm25,1.5
-Impact of income inequality on economic mobility,broad_exploratory,rrf,1.2
-Impact of income inequality on economic mobility,broad_exploratory,reranked,1.5
-Trade liberalization and firm productivity,broad_exploratory,faiss,2.0
-Trade liberalization and firm productivity,broad_exploratory,bm25,2.5
-Trade liberalization and firm productivity,broad_exploratory,rrf,2.3
-Trade liberalization and firm productivity,broad_exploratory,reranked,2.8
-Economic effects of climate change adaptation policies,broad_exploratory,faiss,1.1
-Economic effects of climate change adaptation policies,broad_exploratory,bm25,1.2
-Economic effects of climate change adaptation policies,broad_exploratory,rrf,1.1
-Economic effects of climate change adaptation policies,broad_exploratory,reranked,1.4
-Financial crises and household consumption behavior,broad_exploratory,faiss,1.2
-Financial crises and household consumption behavior,broad_exploratory,bm25,1.4
-Financial crises and household consumption behavior,broad_exploratory,rrf,1.7
-Financial crises and household consumption behavior,broad_exploratory,reranked,1.8
-Role of education in long-run wage growth,broad_exploratory,faiss,0.9
-Role of education in long-run wage growth,broad_exploratory,bm25,0.9
-Role of education in long-run wage growth,broad_exploratory,rrf,0.9
-Role of education in long-run wage growth,broad_exploratory,reranked,1.2
-Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,1.4
-Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,1.3
-Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,1.6
-Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,1.8
-Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,0.7
-Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,1.0
-Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,1.1
-Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,1.2
-Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,2.1
-Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,1.8
-Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,1.9
-Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,1.9
-Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,1.2
-Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,1.2
-Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,1.2
-Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,1.1
-Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,1.1
-Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,1.1
-Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,1.2
-Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,1.3
-Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,1.5
-Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,1.6
-Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,1.7
-Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,1.7
-Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,1.1
-Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,1.2
-Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,1.3
-Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,1.3
-Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,1.1
-Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,1.3
-Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,1.5
-Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,1.4
-What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,0.8
-What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,0.9
-What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,0.8
-What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,1.0
-Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,0.8
-Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,1.0
-Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,0.9
-Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,1.0
-What have economists found about universal basic income and labor supply?,natural_language,faiss,0.6
-What have economists found about universal basic income and labor supply?,natural_language,bm25,0.4
-What have economists found about universal basic income and labor supply?,natural_language,rrf,0.8
-What have economists found about universal basic income and labor supply?,natural_language,reranked,1.0
-"Does free trade help workers, or mostly firms?",natural_language,faiss,1.2
-"Does free trade help workers, or mostly firms?",natural_language,bm25,1.2
-"Does free trade help workers, or mostly firms?",natural_language,rrf,1.4
-"Does free trade help workers, or mostly firms?",natural_language,reranked,1.3
-Do rent control policies actually make housing more affordable over time?,natural_language,faiss,1.3
-Do rent control policies actually make housing more affordable over time?,natural_language,bm25,1.5
-Do rent control policies actually make housing more affordable over time?,natural_language,rrf,1.3
-Do rent control policies actually make housing more affordable over time?,natural_language,reranked,1.7
-What does research say about whether student debt affects home ownership?,natural_language,faiss,0.8
-What does research say about whether student debt affects home ownership?,natural_language,bm25,0.8
-What does research say about whether student debt affects home ownership?,natural_language,rrf,0.9
-What does research say about whether student debt affects home ownership?,natural_language,reranked,1.1
-How much do recessions affect people early in their careers?,natural_language,faiss,1.4
-How much do recessions affect people early in their careers?,natural_language,bm25,0.8
-How much do recessions affect people early in their careers?,natural_language,rrf,1.1
-How much do recessions affect people early in their careers?,natural_language,reranked,1.7
-minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,0.2
-minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,1.3
-minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,0.9
-minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,1.5
-education returns instrumental variables developing countries,keyword_researcher,faiss,1.0
-education returns instrumental variables developing countries,keyword_researcher,bm25,1.4
-education returns instrumental variables developing countries,keyword_researcher,rrf,1.0
-education returns instrumental variables developing countries,keyword_researcher,reranked,1.6
-trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,1.8
-trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,1.9
-trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,2.0
-trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,2.1
-monetary policy event study stock volatility high frequency,keyword_researcher,faiss,1.1
-monetary policy event study stock volatility high frequency,keyword_researcher,bm25,1.9
-monetary policy event study stock volatility high frequency,keyword_researcher,rrf,1.8
-monetary policy event study stock volatility high frequency,keyword_researcher,reranked,1.9
-carbon tax synthetic control european union emissions,keyword_researcher,faiss,1.0
-carbon tax synthetic control european union emissions,keyword_researcher,bm25,1.6
-carbon tax synthetic control european union emissions,keyword_researcher,rrf,1.1
-carbon tax synthetic control european union emissions,keyword_researcher,reranked,1.6
-microfinance randomized trial household welfare south asia,keyword_researcher,faiss,1.4
-microfinance randomized trial household welfare south asia,keyword_researcher,bm25,1.4
-microfinance randomized trial household welfare south asia,keyword_researcher,rrf,1.3
-microfinance randomized trial household welfare south asia,keyword_researcher,reranked,1.0
-exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,1.2
-exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,1.6
-exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,1.2
-exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,1.5
+query,category,method,rank,score
+Causes of inflation in developing economies,broad_exploratory,faiss,1,1
+Causes of inflation in developing economies,broad_exploratory,faiss,2,1
+Causes of inflation in developing economies,broad_exploratory,faiss,3,1
+Causes of inflation in developing economies,broad_exploratory,faiss,4,1
+Causes of inflation in developing economies,broad_exploratory,faiss,5,0
+Causes of inflation in developing economies,broad_exploratory,faiss,6,0
+Causes of inflation in developing economies,broad_exploratory,faiss,7,0
+Causes of inflation in developing economies,broad_exploratory,faiss,8,1
+Causes of inflation in developing economies,broad_exploratory,faiss,9,0
+Causes of inflation in developing economies,broad_exploratory,faiss,10,2
+Causes of inflation in developing economies,broad_exploratory,bm25,1,1
+Causes of inflation in developing economies,broad_exploratory,bm25,2,1
+Causes of inflation in developing economies,broad_exploratory,bm25,3,1
+Causes of inflation in developing economies,broad_exploratory,bm25,4,1
+Causes of inflation in developing economies,broad_exploratory,bm25,5,1
+Causes of inflation in developing economies,broad_exploratory,bm25,6,1
+Causes of inflation in developing economies,broad_exploratory,bm25,7,1
+Causes of inflation in developing economies,broad_exploratory,bm25,8,1
+Causes of inflation in developing economies,broad_exploratory,bm25,9,1
+Causes of inflation in developing economies,broad_exploratory,bm25,10,1
+Causes of inflation in developing economies,broad_exploratory,rrf,1,1
+Causes of inflation in developing economies,broad_exploratory,rrf,2,2
+Causes of inflation in developing economies,broad_exploratory,rrf,3,1
+Causes of inflation in developing economies,broad_exploratory,rrf,4,2
+Causes of inflation in developing economies,broad_exploratory,rrf,5,1
+Causes of inflation in developing economies,broad_exploratory,rrf,6,1
+Causes of inflation in developing economies,broad_exploratory,rrf,7,1
+Causes of inflation in developing economies,broad_exploratory,rrf,8,1
+Causes of inflation in developing economies,broad_exploratory,rrf,9,1
+Causes of inflation in developing economies,broad_exploratory,rrf,10,1
+Causes of inflation in developing economies,broad_exploratory,reranked,1,2
+Causes of inflation in developing economies,broad_exploratory,reranked,2,1
+Causes of inflation in developing economies,broad_exploratory,reranked,3,1
+Causes of inflation in developing economies,broad_exploratory,reranked,4,2
+Causes of inflation in developing economies,broad_exploratory,reranked,5,1
+Causes of inflation in developing economies,broad_exploratory,reranked,6,1
+Causes of inflation in developing economies,broad_exploratory,reranked,7,1
+Causes of inflation in developing economies,broad_exploratory,reranked,8,1
+Causes of inflation in developing economies,broad_exploratory,reranked,9,2
+Causes of inflation in developing economies,broad_exploratory,reranked,10,1
+Effects of automation on labor market outcomes,broad_exploratory,faiss,1,2
+Effects of automation on labor market outcomes,broad_exploratory,faiss,2,3
+Effects of automation on labor market outcomes,broad_exploratory,faiss,3,1
+Effects of automation on labor market outcomes,broad_exploratory,faiss,4,2
+Effects of automation on labor market outcomes,broad_exploratory,faiss,5,2
+Effects of automation on labor market outcomes,broad_exploratory,faiss,6,1
+Effects of automation on labor market outcomes,broad_exploratory,faiss,7,1
+Effects of automation on labor market outcomes,broad_exploratory,faiss,8,1
+Effects of automation on labor market outcomes,broad_exploratory,faiss,9,3
+Effects of automation on labor market outcomes,broad_exploratory,faiss,10,2
+Effects of automation on labor market outcomes,broad_exploratory,bm25,1,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,2,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,3,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,4,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,5,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,6,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,7,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,8,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,9,3
+Effects of automation on labor market outcomes,broad_exploratory,bm25,10,2
+Effects of automation on labor market outcomes,broad_exploratory,rrf,1,3
+Effects of automation on labor market outcomes,broad_exploratory,rrf,2,2
+Effects of automation on labor market outcomes,broad_exploratory,rrf,3,3
+Effects of automation on labor market outcomes,broad_exploratory,rrf,4,2
+Effects of automation on labor market outcomes,broad_exploratory,rrf,5,3
+Effects of automation on labor market outcomes,broad_exploratory,rrf,6,1
+Effects of automation on labor market outcomes,broad_exploratory,rrf,7,1
+Effects of automation on labor market outcomes,broad_exploratory,rrf,8,3
+Effects of automation on labor market outcomes,broad_exploratory,rrf,9,3
+Effects of automation on labor market outcomes,broad_exploratory,rrf,10,1
+Effects of automation on labor market outcomes,broad_exploratory,reranked,1,2
+Effects of automation on labor market outcomes,broad_exploratory,reranked,2,2
+Effects of automation on labor market outcomes,broad_exploratory,reranked,3,3
+Effects of automation on labor market outcomes,broad_exploratory,reranked,4,3
+Effects of automation on labor market outcomes,broad_exploratory,reranked,5,3
+Effects of automation on labor market outcomes,broad_exploratory,reranked,6,3
+Effects of automation on labor market outcomes,broad_exploratory,reranked,7,1
+Effects of automation on labor market outcomes,broad_exploratory,reranked,8,3
+Effects of automation on labor market outcomes,broad_exploratory,reranked,9,2
+Effects of automation on labor market outcomes,broad_exploratory,reranked,10,2
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,1,1
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,2,0
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,3,2
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,4,2
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,5,0
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,6,1
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,7,2
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,8,1
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,9,1
+Determinants of economic growth in low-income countries,broad_exploratory,faiss,10,1
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,1,1
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,2,2
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,3,1
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,4,2
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,5,2
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,6,3
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,7,1
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,8,1
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,9,1
+Determinants of economic growth in low-income countries,broad_exploratory,bm25,10,1
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,1,2
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,2,1
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,3,1
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,4,1
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,5,1
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,6,0
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,7,2
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,8,1
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,9,2
+Determinants of economic growth in low-income countries,broad_exploratory,rrf,10,0
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,1,2
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,2,1
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,3,1
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,4,2
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,5,1
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,6,1
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,7,1
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,8,3
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,9,1
+Determinants of economic growth in low-income countries,broad_exploratory,reranked,10,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,1,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,2,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,3,2
+Impact of income inequality on economic mobility,broad_exploratory,faiss,4,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,5,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,6,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,7,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,8,1
+Impact of income inequality on economic mobility,broad_exploratory,faiss,9,2
+Impact of income inequality on economic mobility,broad_exploratory,faiss,10,1
+Impact of income inequality on economic mobility,broad_exploratory,bm25,1,1
+Impact of income inequality on economic mobility,broad_exploratory,bm25,2,2
+Impact of income inequality on economic mobility,broad_exploratory,bm25,3,2
+Impact of income inequality on economic mobility,broad_exploratory,bm25,4,2
+Impact of income inequality on economic mobility,broad_exploratory,bm25,5,1
+Impact of income inequality on economic mobility,broad_exploratory,bm25,6,1
+Impact of income inequality on economic mobility,broad_exploratory,bm25,7,1
+Impact of income inequality on economic mobility,broad_exploratory,bm25,8,2
+Impact of income inequality on economic mobility,broad_exploratory,bm25,9,1
+Impact of income inequality on economic mobility,broad_exploratory,bm25,10,2
+Impact of income inequality on economic mobility,broad_exploratory,rrf,1,1
+Impact of income inequality on economic mobility,broad_exploratory,rrf,2,1
+Impact of income inequality on economic mobility,broad_exploratory,rrf,3,1
+Impact of income inequality on economic mobility,broad_exploratory,rrf,4,2
+Impact of income inequality on economic mobility,broad_exploratory,rrf,5,2
+Impact of income inequality on economic mobility,broad_exploratory,rrf,6,1
+Impact of income inequality on economic mobility,broad_exploratory,rrf,7,1
+Impact of income inequality on economic mobility,broad_exploratory,rrf,8,1
+Impact of income inequality on economic mobility,broad_exploratory,rrf,9,1
+Impact of income inequality on economic mobility,broad_exploratory,rrf,10,1
+Impact of income inequality on economic mobility,broad_exploratory,reranked,1,1
+Impact of income inequality on economic mobility,broad_exploratory,reranked,2,1
+Impact of income inequality on economic mobility,broad_exploratory,reranked,3,1
+Impact of income inequality on economic mobility,broad_exploratory,reranked,4,2
+Impact of income inequality on economic mobility,broad_exploratory,reranked,5,1
+Impact of income inequality on economic mobility,broad_exploratory,reranked,6,2
+Impact of income inequality on economic mobility,broad_exploratory,reranked,7,2
+Impact of income inequality on economic mobility,broad_exploratory,reranked,8,2
+Impact of income inequality on economic mobility,broad_exploratory,reranked,9,2
+Impact of income inequality on economic mobility,broad_exploratory,reranked,10,1
+Trade liberalization and firm productivity,broad_exploratory,faiss,1,1
+Trade liberalization and firm productivity,broad_exploratory,faiss,2,1
+Trade liberalization and firm productivity,broad_exploratory,faiss,3,2
+Trade liberalization and firm productivity,broad_exploratory,faiss,4,3
+Trade liberalization and firm productivity,broad_exploratory,faiss,5,3
+Trade liberalization and firm productivity,broad_exploratory,faiss,6,3
+Trade liberalization and firm productivity,broad_exploratory,faiss,7,1
+Trade liberalization and firm productivity,broad_exploratory,faiss,8,2
+Trade liberalization and firm productivity,broad_exploratory,faiss,9,1
+Trade liberalization and firm productivity,broad_exploratory,faiss,10,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,1,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,2,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,3,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,4,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,5,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,6,1
+Trade liberalization and firm productivity,broad_exploratory,bm25,7,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,8,3
+Trade liberalization and firm productivity,broad_exploratory,bm25,9,1
+Trade liberalization and firm productivity,broad_exploratory,bm25,10,2
+Trade liberalization and firm productivity,broad_exploratory,rrf,1,3
+Trade liberalization and firm productivity,broad_exploratory,rrf,2,1
+Trade liberalization and firm productivity,broad_exploratory,rrf,3,3
+Trade liberalization and firm productivity,broad_exploratory,rrf,4,3
+Trade liberalization and firm productivity,broad_exploratory,rrf,5,1
+Trade liberalization and firm productivity,broad_exploratory,rrf,6,3
+Trade liberalization and firm productivity,broad_exploratory,rrf,7,3
+Trade liberalization and firm productivity,broad_exploratory,rrf,8,2
+Trade liberalization and firm productivity,broad_exploratory,rrf,9,3
+Trade liberalization and firm productivity,broad_exploratory,rrf,10,1
+Trade liberalization and firm productivity,broad_exploratory,reranked,1,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,2,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,3,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,4,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,5,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,6,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,7,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,8,3
+Trade liberalization and firm productivity,broad_exploratory,reranked,9,2
+Trade liberalization and firm productivity,broad_exploratory,reranked,10,2
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,1,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,2,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,3,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,4,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,5,2
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,6,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,7,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,8,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,9,1
+Economic effects of climate change adaptation policies,broad_exploratory,faiss,10,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,1,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,2,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,3,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,4,2
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,5,2
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,6,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,7,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,8,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,9,1
+Economic effects of climate change adaptation policies,broad_exploratory,bm25,10,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,1,2
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,2,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,3,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,4,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,5,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,6,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,7,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,8,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,9,1
+Economic effects of climate change adaptation policies,broad_exploratory,rrf,10,1
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,1,2
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,2,2
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,3,2
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,4,1
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,5,1
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,6,1
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,7,2
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,8,1
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,9,1
+Economic effects of climate change adaptation policies,broad_exploratory,reranked,10,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,1,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,2,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,3,2
+Financial crises and household consumption behavior,broad_exploratory,faiss,4,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,5,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,6,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,7,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,8,1
+Financial crises and household consumption behavior,broad_exploratory,faiss,9,2
+Financial crises and household consumption behavior,broad_exploratory,faiss,10,1
+Financial crises and household consumption behavior,broad_exploratory,bm25,1,2
+Financial crises and household consumption behavior,broad_exploratory,bm25,2,3
+Financial crises and household consumption behavior,broad_exploratory,bm25,3,2
+Financial crises and household consumption behavior,broad_exploratory,bm25,4,1
+Financial crises and household consumption behavior,broad_exploratory,bm25,5,1
+Financial crises and household consumption behavior,broad_exploratory,bm25,6,1
+Financial crises and household consumption behavior,broad_exploratory,bm25,7,1
+Financial crises and household consumption behavior,broad_exploratory,bm25,8,1
+Financial crises and household consumption behavior,broad_exploratory,bm25,9,1
+Financial crises and household consumption behavior,broad_exploratory,bm25,10,1
+Financial crises and household consumption behavior,broad_exploratory,rrf,1,2
+Financial crises and household consumption behavior,broad_exploratory,rrf,2,1
+Financial crises and household consumption behavior,broad_exploratory,rrf,3,2
+Financial crises and household consumption behavior,broad_exploratory,rrf,4,1
+Financial crises and household consumption behavior,broad_exploratory,rrf,5,2
+Financial crises and household consumption behavior,broad_exploratory,rrf,6,2
+Financial crises and household consumption behavior,broad_exploratory,rrf,7,1
+Financial crises and household consumption behavior,broad_exploratory,rrf,8,2
+Financial crises and household consumption behavior,broad_exploratory,rrf,9,1
+Financial crises and household consumption behavior,broad_exploratory,rrf,10,3
+Financial crises and household consumption behavior,broad_exploratory,reranked,1,2
+Financial crises and household consumption behavior,broad_exploratory,reranked,2,2
+Financial crises and household consumption behavior,broad_exploratory,reranked,3,3
+Financial crises and household consumption behavior,broad_exploratory,reranked,4,1
+Financial crises and household consumption behavior,broad_exploratory,reranked,5,1
+Financial crises and household consumption behavior,broad_exploratory,reranked,6,1
+Financial crises and household consumption behavior,broad_exploratory,reranked,7,1
+Financial crises and household consumption behavior,broad_exploratory,reranked,8,3
+Financial crises and household consumption behavior,broad_exploratory,reranked,9,2
+Financial crises and household consumption behavior,broad_exploratory,reranked,10,2
+Role of education in long-run wage growth,broad_exploratory,faiss,1,1
+Role of education in long-run wage growth,broad_exploratory,faiss,2,1
+Role of education in long-run wage growth,broad_exploratory,faiss,3,1
+Role of education in long-run wage growth,broad_exploratory,faiss,4,1
+Role of education in long-run wage growth,broad_exploratory,faiss,5,1
+Role of education in long-run wage growth,broad_exploratory,faiss,6,1
+Role of education in long-run wage growth,broad_exploratory,faiss,7,1
+Role of education in long-run wage growth,broad_exploratory,faiss,8,0
+Role of education in long-run wage growth,broad_exploratory,faiss,9,1
+Role of education in long-run wage growth,broad_exploratory,faiss,10,1
+Role of education in long-run wage growth,broad_exploratory,bm25,1,1
+Role of education in long-run wage growth,broad_exploratory,bm25,2,1
+Role of education in long-run wage growth,broad_exploratory,bm25,3,1
+Role of education in long-run wage growth,broad_exploratory,bm25,4,1
+Role of education in long-run wage growth,broad_exploratory,bm25,5,0
+Role of education in long-run wage growth,broad_exploratory,bm25,6,1
+Role of education in long-run wage growth,broad_exploratory,bm25,7,1
+Role of education in long-run wage growth,broad_exploratory,bm25,8,1
+Role of education in long-run wage growth,broad_exploratory,bm25,9,1
+Role of education in long-run wage growth,broad_exploratory,bm25,10,1
+Role of education in long-run wage growth,broad_exploratory,rrf,1,1
+Role of education in long-run wage growth,broad_exploratory,rrf,2,1
+Role of education in long-run wage growth,broad_exploratory,rrf,3,1
+Role of education in long-run wage growth,broad_exploratory,rrf,4,1
+Role of education in long-run wage growth,broad_exploratory,rrf,5,1
+Role of education in long-run wage growth,broad_exploratory,rrf,6,1
+Role of education in long-run wage growth,broad_exploratory,rrf,7,1
+Role of education in long-run wage growth,broad_exploratory,rrf,8,1
+Role of education in long-run wage growth,broad_exploratory,rrf,9,1
+Role of education in long-run wage growth,broad_exploratory,rrf,10,0
+Role of education in long-run wage growth,broad_exploratory,reranked,1,1
+Role of education in long-run wage growth,broad_exploratory,reranked,2,2
+Role of education in long-run wage growth,broad_exploratory,reranked,3,1
+Role of education in long-run wage growth,broad_exploratory,reranked,4,1
+Role of education in long-run wage growth,broad_exploratory,reranked,5,1
+Role of education in long-run wage growth,broad_exploratory,reranked,6,2
+Role of education in long-run wage growth,broad_exploratory,reranked,7,1
+Role of education in long-run wage growth,broad_exploratory,reranked,8,1
+Role of education in long-run wage growth,broad_exploratory,reranked,9,1
+Role of education in long-run wage growth,broad_exploratory,reranked,10,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,1,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,2,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,3,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,4,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,5,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,6,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,7,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,8,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,9,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,faiss,10,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,1,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,2,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,3,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,4,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,5,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,6,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,7,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,8,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,9,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,bm25,10,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,1,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,2,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,3,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,4,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,5,3
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,6,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,7,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,8,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,9,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,rrf,10,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,1,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,2,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,3,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,4,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,5,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,6,1
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,7,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,8,2
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,9,3
+Difference-in-differences studies of minimum wage effects on teenage employment in the United States,narrow_technical,reranked,10,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,1,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,2,0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,3,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,4,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,5,0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,6,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,7,0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,8,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,9,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,faiss,10,0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,1,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,2,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,3,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,4,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,5,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,6,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,7,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,8,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,9,0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,bm25,10,0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,1,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,2,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,3,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,4,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,5,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,6,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,7,0
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,8,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,9,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,rrf,10,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,1,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,2,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,3,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,4,2
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,5,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,6,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,7,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,8,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,9,1
+Instrumental variable estimates of returns to education in Latin America,narrow_technical,reranked,10,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,1,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,2,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,3,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,4,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,5,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,6,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,7,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,8,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,9,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,faiss,10,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,1,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,2,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,3,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,4,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,5,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,6,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,7,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,8,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,9,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,bm25,10,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,1,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,2,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,3,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,4,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,5,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,6,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,7,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,8,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,9,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,rrf,10,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,1,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,2,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,3,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,4,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,5,2
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,6,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,7,3
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,8,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,9,1
+Regression discontinuity evidence on unemployment insurance duration and job search outcomes,narrow_technical,reranked,10,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,1,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,2,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,3,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,4,2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,5,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,6,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,7,2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,8,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,9,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,faiss,10,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,1,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,2,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,3,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,4,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,5,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,6,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,7,2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,8,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,9,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,bm25,10,2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,1,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,2,2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,3,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,4,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,5,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,6,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,7,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,8,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,9,2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,rrf,10,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,1,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,2,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,3,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,4,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,5,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,6,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,7,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,8,2
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,9,1
+Panel data studies of exchange rate volatility and export performance in emerging markets,narrow_technical,reranked,10,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,1,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,2,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,3,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,4,2
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,5,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,6,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,7,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,8,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,9,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,faiss,10,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,1,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,2,0
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,3,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,4,3
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,5,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,6,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,7,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,8,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,9,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,bm25,10,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,1,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,2,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,3,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,4,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,5,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,6,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,7,3
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,8,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,9,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,rrf,10,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,1,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,2,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,3,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,4,0
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,5,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,6,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,7,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,8,1
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,9,3
+Randomized controlled trials of microcredit effects on household income in South Asia,narrow_technical,reranked,10,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,1,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,2,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,3,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,4,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,5,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,6,2
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,7,2
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,8,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,9,2
+Structural estimation of household consumption under liquidity constraints,narrow_technical,faiss,10,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,1,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,2,2
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,3,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,4,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,5,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,6,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,7,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,8,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,9,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,bm25,10,0
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,1,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,2,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,3,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,4,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,5,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,6,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,7,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,8,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,9,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,rrf,10,2
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,1,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,2,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,3,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,4,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,5,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,6,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,7,3
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,8,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,9,1
+Structural estimation of household consumption under liquidity constraints,narrow_technical,reranked,10,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,1,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,2,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,3,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,4,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,5,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,6,0
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,7,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,8,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,9,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,faiss,10,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,1,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,2,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,3,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,4,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,5,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,6,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,7,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,8,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,9,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,bm25,10,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,1,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,2,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,3,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,4,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,5,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,6,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,7,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,8,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,9,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,rrf,10,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,1,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,2,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,3,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,4,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,5,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,6,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,7,1
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,8,2
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,9,0
+Synthetic control analyses of carbon tax implementation in European countries,narrow_technical,reranked,10,2
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,1,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,2,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,3,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,4,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,5,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,6,2
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,7,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,8,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,9,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,faiss,10,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,1,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,2,3
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,3,2
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,4,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,5,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,6,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,7,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,8,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,9,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,bm25,10,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,1,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,2,3
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,3,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,4,2
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,5,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,6,2
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,7,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,8,2
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,9,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,rrf,10,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,1,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,2,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,3,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,4,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,5,3
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,6,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,7,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,8,1
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,9,2
+Event study evidence on monetary policy announcements and stock market volatility,narrow_technical,reranked,10,2
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,1,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,2,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,3,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,4,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,5,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,6,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,7,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,8,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,9,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,faiss,10,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,1,2
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,2,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,3,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,4,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,5,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,6,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,7,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,8,2
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,9,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,bm25,10,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,1,2
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,2,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,3,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,4,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,5,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,6,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,7,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,8,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,9,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,rrf,10,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,1,2
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,2,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,3,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,4,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,5,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,6,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,7,2
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,8,0
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,9,1
+What does the economics literature say about whether immigration lowers native wages?,natural_language,reranked,10,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,1,2
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,2,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,3,0
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,4,0
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,5,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,6,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,7,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,8,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,9,0
+Do higher interest rates actually reduce inflation in practice?,natural_language,faiss,10,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,1,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,2,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,3,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,4,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,5,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,6,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,7,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,8,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,9,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,bm25,10,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,1,2
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,2,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,3,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,4,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,5,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,6,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,7,0
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,8,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,9,0
+Do higher interest rates actually reduce inflation in practice?,natural_language,rrf,10,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,1,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,2,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,3,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,4,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,5,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,6,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,7,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,8,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,9,1
+Do higher interest rates actually reduce inflation in practice?,natural_language,reranked,10,1
+What have economists found about universal basic income and labor supply?,natural_language,faiss,1,3
+What have economists found about universal basic income and labor supply?,natural_language,faiss,2,0
+What have economists found about universal basic income and labor supply?,natural_language,faiss,3,1
+What have economists found about universal basic income and labor supply?,natural_language,faiss,4,0
+What have economists found about universal basic income and labor supply?,natural_language,faiss,5,1
+What have economists found about universal basic income and labor supply?,natural_language,faiss,6,0
+What have economists found about universal basic income and labor supply?,natural_language,faiss,7,0
+What have economists found about universal basic income and labor supply?,natural_language,faiss,8,1
+What have economists found about universal basic income and labor supply?,natural_language,faiss,9,0
+What have economists found about universal basic income and labor supply?,natural_language,faiss,10,0
+What have economists found about universal basic income and labor supply?,natural_language,bm25,1,1
+What have economists found about universal basic income and labor supply?,natural_language,bm25,2,1
+What have economists found about universal basic income and labor supply?,natural_language,bm25,3,1
+What have economists found about universal basic income and labor supply?,natural_language,bm25,4,0
+What have economists found about universal basic income and labor supply?,natural_language,bm25,5,0
+What have economists found about universal basic income and labor supply?,natural_language,bm25,6,0
+What have economists found about universal basic income and labor supply?,natural_language,bm25,7,0
+What have economists found about universal basic income and labor supply?,natural_language,bm25,8,1
+What have economists found about universal basic income and labor supply?,natural_language,bm25,9,0
+What have economists found about universal basic income and labor supply?,natural_language,bm25,10,0
+What have economists found about universal basic income and labor supply?,natural_language,rrf,1,3
+What have economists found about universal basic income and labor supply?,natural_language,rrf,2,1
+What have economists found about universal basic income and labor supply?,natural_language,rrf,3,0
+What have economists found about universal basic income and labor supply?,natural_language,rrf,4,1
+What have economists found about universal basic income and labor supply?,natural_language,rrf,5,1
+What have economists found about universal basic income and labor supply?,natural_language,rrf,6,1
+What have economists found about universal basic income and labor supply?,natural_language,rrf,7,0
+What have economists found about universal basic income and labor supply?,natural_language,rrf,8,0
+What have economists found about universal basic income and labor supply?,natural_language,rrf,9,1
+What have economists found about universal basic income and labor supply?,natural_language,rrf,10,0
+What have economists found about universal basic income and labor supply?,natural_language,reranked,1,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,2,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,3,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,4,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,5,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,6,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,7,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,8,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,9,1
+What have economists found about universal basic income and labor supply?,natural_language,reranked,10,1
+"Does free trade help workers, or mostly firms?",natural_language,faiss,1,2
+"Does free trade help workers, or mostly firms?",natural_language,faiss,2,1
+"Does free trade help workers, or mostly firms?",natural_language,faiss,3,2
+"Does free trade help workers, or mostly firms?",natural_language,faiss,4,1
+"Does free trade help workers, or mostly firms?",natural_language,faiss,5,2
+"Does free trade help workers, or mostly firms?",natural_language,faiss,6,1
+"Does free trade help workers, or mostly firms?",natural_language,faiss,7,1
+"Does free trade help workers, or mostly firms?",natural_language,faiss,8,1
+"Does free trade help workers, or mostly firms?",natural_language,faiss,9,0
+"Does free trade help workers, or mostly firms?",natural_language,faiss,10,1
+"Does free trade help workers, or mostly firms?",natural_language,bm25,1,1
+"Does free trade help workers, or mostly firms?",natural_language,bm25,2,2
+"Does free trade help workers, or mostly firms?",natural_language,bm25,3,1
+"Does free trade help workers, or mostly firms?",natural_language,bm25,4,3
+"Does free trade help workers, or mostly firms?",natural_language,bm25,5,0
+"Does free trade help workers, or mostly firms?",natural_language,bm25,6,1
+"Does free trade help workers, or mostly firms?",natural_language,bm25,7,1
+"Does free trade help workers, or mostly firms?",natural_language,bm25,8,1
+"Does free trade help workers, or mostly firms?",natural_language,bm25,9,1
+"Does free trade help workers, or mostly firms?",natural_language,bm25,10,1
+"Does free trade help workers, or mostly firms?",natural_language,rrf,1,1
+"Does free trade help workers, or mostly firms?",natural_language,rrf,2,1
+"Does free trade help workers, or mostly firms?",natural_language,rrf,3,1
+"Does free trade help workers, or mostly firms?",natural_language,rrf,4,2
+"Does free trade help workers, or mostly firms?",natural_language,rrf,5,2
+"Does free trade help workers, or mostly firms?",natural_language,rrf,6,1
+"Does free trade help workers, or mostly firms?",natural_language,rrf,7,2
+"Does free trade help workers, or mostly firms?",natural_language,rrf,8,2
+"Does free trade help workers, or mostly firms?",natural_language,rrf,9,1
+"Does free trade help workers, or mostly firms?",natural_language,rrf,10,1
+"Does free trade help workers, or mostly firms?",natural_language,reranked,1,2
+"Does free trade help workers, or mostly firms?",natural_language,reranked,2,2
+"Does free trade help workers, or mostly firms?",natural_language,reranked,3,1
+"Does free trade help workers, or mostly firms?",natural_language,reranked,4,1
+"Does free trade help workers, or mostly firms?",natural_language,reranked,5,1
+"Does free trade help workers, or mostly firms?",natural_language,reranked,6,2
+"Does free trade help workers, or mostly firms?",natural_language,reranked,7,1
+"Does free trade help workers, or mostly firms?",natural_language,reranked,8,1
+"Does free trade help workers, or mostly firms?",natural_language,reranked,9,1
+"Does free trade help workers, or mostly firms?",natural_language,reranked,10,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,1,3
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,2,2
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,3,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,4,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,5,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,6,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,7,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,8,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,9,1
+Do rent control policies actually make housing more affordable over time?,natural_language,faiss,10,1
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,1,2
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,2,2
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,3,1
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,4,3
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,5,1
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,6,1
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,7,1
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,8,1
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,9,2
+Do rent control policies actually make housing more affordable over time?,natural_language,bm25,10,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,1,2
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,2,3
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,3,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,4,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,5,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,6,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,7,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,8,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,9,1
+Do rent control policies actually make housing more affordable over time?,natural_language,rrf,10,1
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,1,2
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,2,3
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,3,1
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,4,2
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,5,1
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,6,3
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,7,1
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,8,2
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,9,1
+Do rent control policies actually make housing more affordable over time?,natural_language,reranked,10,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,1,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,2,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,3,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,4,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,5,0
+What does research say about whether student debt affects home ownership?,natural_language,faiss,6,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,7,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,8,1
+What does research say about whether student debt affects home ownership?,natural_language,faiss,9,0
+What does research say about whether student debt affects home ownership?,natural_language,faiss,10,1
+What does research say about whether student debt affects home ownership?,natural_language,bm25,1,3
+What does research say about whether student debt affects home ownership?,natural_language,bm25,2,0
+What does research say about whether student debt affects home ownership?,natural_language,bm25,3,1
+What does research say about whether student debt affects home ownership?,natural_language,bm25,4,0
+What does research say about whether student debt affects home ownership?,natural_language,bm25,5,1
+What does research say about whether student debt affects home ownership?,natural_language,bm25,6,0
+What does research say about whether student debt affects home ownership?,natural_language,bm25,7,1
+What does research say about whether student debt affects home ownership?,natural_language,bm25,8,1
+What does research say about whether student debt affects home ownership?,natural_language,bm25,9,1
+What does research say about whether student debt affects home ownership?,natural_language,bm25,10,0
+What does research say about whether student debt affects home ownership?,natural_language,rrf,1,1
+What does research say about whether student debt affects home ownership?,natural_language,rrf,2,1
+What does research say about whether student debt affects home ownership?,natural_language,rrf,3,3
+What does research say about whether student debt affects home ownership?,natural_language,rrf,4,1
+What does research say about whether student debt affects home ownership?,natural_language,rrf,5,0
+What does research say about whether student debt affects home ownership?,natural_language,rrf,6,1
+What does research say about whether student debt affects home ownership?,natural_language,rrf,7,1
+What does research say about whether student debt affects home ownership?,natural_language,rrf,8,1
+What does research say about whether student debt affects home ownership?,natural_language,rrf,9,0
+What does research say about whether student debt affects home ownership?,natural_language,rrf,10,0
+What does research say about whether student debt affects home ownership?,natural_language,reranked,1,3
+What does research say about whether student debt affects home ownership?,natural_language,reranked,2,1
+What does research say about whether student debt affects home ownership?,natural_language,reranked,3,1
+What does research say about whether student debt affects home ownership?,natural_language,reranked,4,1
+What does research say about whether student debt affects home ownership?,natural_language,reranked,5,1
+What does research say about whether student debt affects home ownership?,natural_language,reranked,6,0
+What does research say about whether student debt affects home ownership?,natural_language,reranked,7,1
+What does research say about whether student debt affects home ownership?,natural_language,reranked,8,1
+What does research say about whether student debt affects home ownership?,natural_language,reranked,9,1
+What does research say about whether student debt affects home ownership?,natural_language,reranked,10,1
+How much do recessions affect people early in their careers?,natural_language,faiss,1,2
+How much do recessions affect people early in their careers?,natural_language,faiss,2,1
+How much do recessions affect people early in their careers?,natural_language,faiss,3,3
+How much do recessions affect people early in their careers?,natural_language,faiss,4,1
+How much do recessions affect people early in their careers?,natural_language,faiss,5,2
+How much do recessions affect people early in their careers?,natural_language,faiss,6,1
+How much do recessions affect people early in their careers?,natural_language,faiss,7,1
+How much do recessions affect people early in their careers?,natural_language,faiss,8,1
+How much do recessions affect people early in their careers?,natural_language,faiss,9,1
+How much do recessions affect people early in their careers?,natural_language,faiss,10,1
+How much do recessions affect people early in their careers?,natural_language,bm25,1,1
+How much do recessions affect people early in their careers?,natural_language,bm25,2,0
+How much do recessions affect people early in their careers?,natural_language,bm25,3,1
+How much do recessions affect people early in their careers?,natural_language,bm25,4,1
+How much do recessions affect people early in their careers?,natural_language,bm25,5,0
+How much do recessions affect people early in their careers?,natural_language,bm25,6,1
+How much do recessions affect people early in their careers?,natural_language,bm25,7,1
+How much do recessions affect people early in their careers?,natural_language,bm25,8,1
+How much do recessions affect people early in their careers?,natural_language,bm25,9,1
+How much do recessions affect people early in their careers?,natural_language,bm25,10,1
+How much do recessions affect people early in their careers?,natural_language,rrf,1,0
+How much do recessions affect people early in their careers?,natural_language,rrf,2,1
+How much do recessions affect people early in their careers?,natural_language,rrf,3,1
+How much do recessions affect people early in their careers?,natural_language,rrf,4,2
+How much do recessions affect people early in their careers?,natural_language,rrf,5,1
+How much do recessions affect people early in their careers?,natural_language,rrf,6,1
+How much do recessions affect people early in their careers?,natural_language,rrf,7,0
+How much do recessions affect people early in their careers?,natural_language,rrf,8,3
+How much do recessions affect people early in their careers?,natural_language,rrf,9,1
+How much do recessions affect people early in their careers?,natural_language,rrf,10,1
+How much do recessions affect people early in their careers?,natural_language,reranked,1,3
+How much do recessions affect people early in their careers?,natural_language,reranked,2,2
+How much do recessions affect people early in their careers?,natural_language,reranked,3,2
+How much do recessions affect people early in their careers?,natural_language,reranked,4,1
+How much do recessions affect people early in their careers?,natural_language,reranked,5,1
+How much do recessions affect people early in their careers?,natural_language,reranked,6,1
+How much do recessions affect people early in their careers?,natural_language,reranked,7,3
+How much do recessions affect people early in their careers?,natural_language,reranked,8,2
+How much do recessions affect people early in their careers?,natural_language,reranked,9,1
+How much do recessions affect people early in their careers?,natural_language,reranked,10,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,1,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,2,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,3,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,4,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,5,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,6,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,7,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,8,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,9,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,faiss,10,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,1,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,2,2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,3,3
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,4,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,5,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,6,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,7,2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,8,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,9,2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,bm25,10,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,1,2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,2,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,3,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,4,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,5,2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,6,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,7,3
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,8,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,9,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,rrf,10,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,1,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,2,3
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,3,2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,4,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,5,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,6,0
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,7,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,8,2
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,9,1
+minimum wage employment youth diff-in-diff united states,keyword_researcher,reranked,10,3
+education returns instrumental variables developing countries,keyword_researcher,faiss,1,2
+education returns instrumental variables developing countries,keyword_researcher,faiss,2,0
+education returns instrumental variables developing countries,keyword_researcher,faiss,3,1
+education returns instrumental variables developing countries,keyword_researcher,faiss,4,0
+education returns instrumental variables developing countries,keyword_researcher,faiss,5,1
+education returns instrumental variables developing countries,keyword_researcher,faiss,6,1
+education returns instrumental variables developing countries,keyword_researcher,faiss,7,1
+education returns instrumental variables developing countries,keyword_researcher,faiss,8,1
+education returns instrumental variables developing countries,keyword_researcher,faiss,9,1
+education returns instrumental variables developing countries,keyword_researcher,faiss,10,2
+education returns instrumental variables developing countries,keyword_researcher,bm25,1,1
+education returns instrumental variables developing countries,keyword_researcher,bm25,2,1
+education returns instrumental variables developing countries,keyword_researcher,bm25,3,1
+education returns instrumental variables developing countries,keyword_researcher,bm25,4,1
+education returns instrumental variables developing countries,keyword_researcher,bm25,5,3
+education returns instrumental variables developing countries,keyword_researcher,bm25,6,2
+education returns instrumental variables developing countries,keyword_researcher,bm25,7,1
+education returns instrumental variables developing countries,keyword_researcher,bm25,8,1
+education returns instrumental variables developing countries,keyword_researcher,bm25,9,2
+education returns instrumental variables developing countries,keyword_researcher,bm25,10,1
+education returns instrumental variables developing countries,keyword_researcher,rrf,1,2
+education returns instrumental variables developing countries,keyword_researcher,rrf,2,1
+education returns instrumental variables developing countries,keyword_researcher,rrf,3,2
+education returns instrumental variables developing countries,keyword_researcher,rrf,4,1
+education returns instrumental variables developing countries,keyword_researcher,rrf,5,0
+education returns instrumental variables developing countries,keyword_researcher,rrf,6,1
+education returns instrumental variables developing countries,keyword_researcher,rrf,7,1
+education returns instrumental variables developing countries,keyword_researcher,rrf,8,0
+education returns instrumental variables developing countries,keyword_researcher,rrf,9,1
+education returns instrumental variables developing countries,keyword_researcher,rrf,10,1
+education returns instrumental variables developing countries,keyword_researcher,reranked,1,2
+education returns instrumental variables developing countries,keyword_researcher,reranked,2,1
+education returns instrumental variables developing countries,keyword_researcher,reranked,3,2
+education returns instrumental variables developing countries,keyword_researcher,reranked,4,1
+education returns instrumental variables developing countries,keyword_researcher,reranked,5,2
+education returns instrumental variables developing countries,keyword_researcher,reranked,6,3
+education returns instrumental variables developing countries,keyword_researcher,reranked,7,2
+education returns instrumental variables developing countries,keyword_researcher,reranked,8,1
+education returns instrumental variables developing countries,keyword_researcher,reranked,9,1
+education returns instrumental variables developing countries,keyword_researcher,reranked,10,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,1,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,2,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,3,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,4,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,5,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,6,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,7,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,8,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,9,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,faiss,10,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,1,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,2,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,3,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,4,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,5,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,6,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,7,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,8,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,9,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,bm25,10,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,1,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,2,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,3,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,4,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,5,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,6,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,7,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,8,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,9,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,rrf,10,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,1,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,2,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,3,3
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,4,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,5,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,6,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,7,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,8,2
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,9,1
+trade liberalization firm productivity panel tfp manufacturing,keyword_researcher,reranked,10,2
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,1,2
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,2,0
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,3,1
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,4,1
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,5,2
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,6,1
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,7,1
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,8,1
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,9,1
+monetary policy event study stock volatility high frequency,keyword_researcher,faiss,10,1
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,1,3
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,2,3
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,3,1
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,4,2
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,5,2
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,6,1
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,7,1
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,8,2
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,9,2
+monetary policy event study stock volatility high frequency,keyword_researcher,bm25,10,2
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,1,2
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,2,2
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,3,1
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,4,1
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,5,2
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,6,2
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,7,2
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,8,3
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,9,0
+monetary policy event study stock volatility high frequency,keyword_researcher,rrf,10,3
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,1,3
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,2,3
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,3,2
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,4,2
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,5,1
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,6,2
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,7,1
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,8,2
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,9,1
+monetary policy event study stock volatility high frequency,keyword_researcher,reranked,10,2
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,1,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,2,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,3,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,4,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,5,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,6,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,7,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,8,0
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,9,1
+carbon tax synthetic control european union emissions,keyword_researcher,faiss,10,2
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,1,1
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,2,1
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,3,2
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,4,1
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,5,1
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,6,2
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,7,2
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,8,2
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,9,2
+carbon tax synthetic control european union emissions,keyword_researcher,bm25,10,2
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,1,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,2,2
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,3,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,4,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,5,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,6,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,7,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,8,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,9,1
+carbon tax synthetic control european union emissions,keyword_researcher,rrf,10,1
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,1,1
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,2,2
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,3,1
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,4,2
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,5,2
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,6,2
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,7,1
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,8,2
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,9,2
+carbon tax synthetic control european union emissions,keyword_researcher,reranked,10,1
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,1,1
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,2,1
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,3,3
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,4,1
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,5,2
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,6,1
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,7,1
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,8,2
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,9,2
+microfinance randomized trial household welfare south asia,keyword_researcher,faiss,10,0
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,1,1
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,2,1
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,3,1
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,4,3
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,5,2
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,6,1
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,7,2
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,8,1
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,9,1
+microfinance randomized trial household welfare south asia,keyword_researcher,bm25,10,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,1,3
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,2,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,3,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,4,2
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,5,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,6,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,7,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,8,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,9,1
+microfinance randomized trial household welfare south asia,keyword_researcher,rrf,10,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,1,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,2,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,3,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,4,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,5,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,6,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,7,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,8,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,9,1
+microfinance randomized trial household welfare south asia,keyword_researcher,reranked,10,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,1,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,2,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,3,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,4,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,5,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,6,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,7,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,8,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,9,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,faiss,10,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,1,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,2,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,3,3
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,4,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,5,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,6,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,7,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,8,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,9,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,bm25,10,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,1,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,2,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,3,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,4,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,5,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,6,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,7,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,8,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,9,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,rrf,10,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,1,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,2,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,3,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,4,2
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,5,3
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,6,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,7,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,8,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,9,1
+exchange rate volatility exports dynamic panel emerging markets,keyword_researcher,reranked,10,2
