@@ -6,8 +6,8 @@ This is my final project for CSCI 222 "Foundations of Large Language Models."
 
 ### Environment
 
-This project is being developed using a GPU on a cluster with CUDA 12.9.
-This requires a specific version of FAISS that is incompatible with NumPy <3.
+This project was developed using a GPU on the HUIT Open OnDemand cluster with CUDA 12.9.
+Note that it uses the CPU version of FAISS; I found that GPU acceleration is not needed for vector indexing a corpus at the size of that in this project, but the GPU is especially helpful for LLM generation.
 
 The cleanest way to reproduce the workflow and results is in a virtual environment:
 
@@ -37,3 +37,7 @@ This requires access to the repository with a Hugging Face access token, so requ
 # .env
 export HF_TOKEN="your_token_here"
 ```
+
+## Results
+
+The results reported in the paper (relevance score tables and UMAP visualization) are included in the `results` directory and can be reproduced by running `main.py`.
