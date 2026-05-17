@@ -71,6 +71,7 @@ if not HF_TOKEN:
     raise RuntimeError('Hugging Face token not found in .env.')
 login(token=HF_TOKEN)
 
+
 # ============================================================================
 # DATA LOADING
 # ============================================================================
@@ -152,6 +153,7 @@ else:
         json.dump(papers, f)
         print(f"Saved {PAPERS_LIMIT:,} papers to {papers_50k_json}.")
 
+
 # ============================================================================
 # DENSE EMBEDDINGS
 # ============================================================================
@@ -174,6 +176,7 @@ else:
     embeddings = embeddings.astype('float32')
     np.save(specter_embeddings_50k_npy, embeddings)
     print(f"Saved SPECTER embeddings to {specter_embeddings_50k_npy}.")
+
 
 # ============================================================================
 # INDEXES
@@ -205,6 +208,7 @@ else:
     retriever.save(bm25s_index_dir)
     print(f"Saved retriever index to {bm25s_index_dir}.")
 
+
 # ============================================================================
 # MODELS
 # ============================================================================
@@ -234,6 +238,7 @@ generator = pipeline(
 )
 # Initialize the module-level generator.
 init_generator(generator)
+
 
 # ============================================================================
 # EVALUATION
@@ -294,6 +299,70 @@ else:
     records_df.to_csv(scores_csv, index=False)
     print(f"Saved relevance scores @{top_k} to {scores_csv}.")
 
+
+# ============================================================================
+# RELEVANCE SCORES
+# ============================================================================
+def mean_relevance_at_k(group, k):
+    """
+    Mean relevance score over the top-k ranked results for one (query, method) 
+    group.
+    """
+    return group[group['rank'] <= k]['score'].mean()
+ 
+def dcg_at_k(group, k):
+    """
+    Discounted Cumulative Gain at cutoff k for one (query, method) group.
+    """
+    sub = group[group['rank'] <= k].sort_values('rank')
+    return (sub['score'] / np.log2(sub['rank'] + 1)).sum()
+
+# Map the query categories in the CSV to their column headers for the report.
+cat_map = {
+    'broad_exploratory': 'Broad',
+    'keyword_researcher': 'Keyword',
+    'narrow_technical': 'Technical',
+    'natural_language': 'Natural',
+}
+# Enforce these orders for the tables.
+method_order = ['bm25', 'faiss', 'rrf', 'reranked']
+cat_order    = ['Broad', 'Keyword', 'Technical', 'Natural', 'Overall']
+records_df['category_label'] = records_df['category'].map(cat_map)
+
+def build_summary_table(metric_fn, k):
+    """
+    Returns a DataFrame of per-category and overall averaged metric values, 
+    rounded to 2 decimal places.
+    """
+    rows = []
+    for method in method_order:
+        mdf = records_df[records_df['method'] == method]
+        row = {'method': method}
+        for cat_label, cat_df in mdf.groupby('category_label'):
+            row[cat_label] = round((cat_df.groupby('query')
+                                          .apply(lambda g: metric_fn(g, k=k))
+                                          .mean()), 2)
+        row['Overall'] = round((mdf.groupby('query')
+                                   .apply(lambda g: metric_fn(g, k=k))
+                                   .mean()), 2)
+        rows.append(row)
+    df_out = pd.DataFrame(rows).set_index('method')
+    return df_out[cat_order]
+
+for metric_fn, metric_name, short in [
+    (mean_relevance_at_k, 'mean_relevance', 'mr'),
+    (dcg_at_k, 'dcg', 'dcg'),
+]:
+    for k in [5, 10]:
+        out_path = RESULTS_DIR / f'{short}_at_{k}.csv'
+        if out_path.exists():
+            print(f"Loaded {metric_name}@{k} table from {out_path}.")
+        else:
+            tbl = build_summary_table(metric_fn, k)
+            tbl.to_csv(out_path)
+            print(f"Saved {metric_name}@{k} table to {out_path}.")
+
+
 # ============================================================================
 # UMAP VISUALIZATION
 # ============================================================================
@@ -352,3 +421,5 @@ else:
     fig.tight_layout()
     fig.savefig(RESULTS_DIR / 'umap.png', dpi=150)
     print(f"Saved UMAP visualization to {umap_png}.")
+
+print("Done!")

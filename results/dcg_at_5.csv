@@ -1,0 +1,5 @@
+method,Broad,Keyword,Technical,Natural,Overall
+bm25,5.2,5.09,4.45,3.32,4.54
+faiss,3.71,3.26,3.93,3.97,3.73
+rrf,4.76,4.63,4.67,3.8,4.48
+reranked,5.3,5.21,4.35,4.39,4.81
